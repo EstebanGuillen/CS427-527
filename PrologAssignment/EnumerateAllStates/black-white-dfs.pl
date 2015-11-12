@@ -20,14 +20,14 @@ not(member_stack(Next, Been_list)),
 stack(Next, Been_list, New_been_list),
 path(Next, Goal, New_been_list), !.
 
+
+
 reverse_print_stack(S) :-
 empty_stack(S).
 reverse_print_stack(S) :-
 stack(E, Rest, S),
 reverse_print_stack(Rest),
 write(E), nl.
-
-
 
 
 move(state(X,Y,X3,X4,X5,X6,X7), state(Y,X,X3,X4,X5,X6,X7))
@@ -81,8 +81,6 @@ move(state(X1,X2,X3,X4,X5,X6,X7), state(X1,X2,X3,X4,X5,X6,X7))
 
 
 
-
-
 /*
 * Definitions of writelist, and opp.
 */
@@ -96,9 +94,3 @@ opp(e,w).
 opp(b,e).
 opp(e,b).
 
-reverse_print_stack(S) :-
-empty_stack(S).
-reverse_print_stack(S) :-
-stack(E, Rest, S),
-reverse_print_stack(Rest),
-write(E), nl.
