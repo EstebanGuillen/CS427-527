@@ -64,38 +64,64 @@ write(E), nl.
 % Possible moves:
 
 
-move([ [X|T],Z ],[ T,[X|Z] ]) :-
-writelist(['Move X Right',[ [X|T],[Z] ],[ [T],[X|Z] ] ]).
+%movig right rules
+/*
+move([ [X,Y,W|T],Z ],[ [T],[Y,W,X|Z] ]) :-
+writelist(['Move ', X , ' Right Jump 2',[ [X,Y,W|T],Z ],[ [T],[Y,W,X|Z] ]]).
+
+move([ [X,Y|T],Z ],[ [T],[Y,X|Z] ]) :-
+writelist(['Move ', X , ' Right Jump 1',[ [X,Y|T],Z ],[ [T],[Y,X|Z] ]]).
+
+
+move([ [X|T],Z ],[ T,[X|Z] ]) :- length(T,1),
+writelist(['Move ', X, ' Right Jump 1',[ [X|T],[Z] ],[ [T],[X|Z] ] ]).
+
+
+move([ [X|T],Z ],[ T,[X|Z] ]) :- length(T,0),
+writelist(['Move ', X, ' Right Jump 0',[ [X|T],[Z] ],[ [T],[X|Z] ] ]).
 
 
 
-%move([ [X,Y|T],Z ],[ [X|T],[Y|Z] ]) :-
-%writelist(['Move Y Right',[ [X,Y|T],Z ],[ [X|T],[Y|Z] ]]).
+move([ [X,Y|T],Z ],[ [X|T],[Y|Z] ]) :- length(T,2),
+writelist(['Move ', Y , ' Right Jump 2',[ [X,Y|T],Z ],[ [X|T],[Y|Z] ]]).
+
+move([ [X,Y|T],Z ],[ [X|T],[Y|Z] ]) :- length(T,1),
+writelist(['Move ', Y, ' Right Jump 1',[ [X,Y|T],Z ],[ [X|T],[Y|Z] ]]).
+
+move([ [X,Y|T],Z ],[ [X|T],[Y|Z] ]) :- length(T,0),
+writelist(['Move ', Y, ' Right Jump 0',[ [X,Y|T],Z ],[ [X|T],[Y|Z] ]]).
+
+
+move([ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]) :- length(T,2),
+writelist(['Move ', W , ' Jump 2',[ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]]).
+
+move([ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]) :- length(T,1),
+writelist(['Move ', W , ' Jump 1',[ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]]).
+
+move([ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]) :- length(T,0),
+writelist(['Move ', W, ' Jump 0',[ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]]).
+*/
 
 
 
 
-%move([ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]) :-
-%writelist(['Move W Right',[ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]]).
 
+%moving left rules
+move([ X,[Y|Z] ],[ New,Z ]) :- append(X,[Y],New),
+writelist(['Move ', Y , ' Left Jump 0', [ X,[Y|Z] ],[ New,Z ]]).
 
+move([ X,[Y,W|Z] ],[ New,Z ]) :- append(X,[W,Y],New),
+writelist(['Move ', W , ' Left Jump 1', [ X,[Y,W|Z] ],[ New,Z ]]).
 
-%move([ Z,[X|T] ],[ [X|Z],T ]) :-
-%writelist(['Move X Left',[ Z,[X|T] ],[ [X|Z],T ] ]).
-
-
-%move([ [X,Y|T],Z ],[ [X|T],[Y|Z] ]) :-
-
-%writelist(['Move Y Left',[ [X,Y|T],Z ],[ [X|T],[Y|Z] ]]).
-
-%move([ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]) :-
-%writelist(['Move W Left',[ [X,Y,W|T],Z ],[ [X,Y|T],[W|Z] ]]).
+move([ X,[Y,W,U|Z] ],[ New,Z ]) :- append(X,[U,Y,W],New),
+writelist(['Move ', U , ' Left Jump 2', [ X,[Y,W,U|Z] ],[ New,Z ]]).
 
 
 
 
-move([ X,Z ],[ X,Z ])
-:- writelist(['      BACKTRACK from:',[ X,Z ],[ X,Z ]]), fail.
+
+move([ X|Z ],[ X|Z ])
+:- writelist(['      BACKTRACK from:',[ X|Z ],[ X|Z ]]), fail.
 
 
 
