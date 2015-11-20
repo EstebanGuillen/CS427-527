@@ -1,0 +1,38 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+			       -HEURISTICS-
+
+                                 Authors:
+              Esteban Guillen (527) and Arely Miramontes (427)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                   --- Black and White	Tile Puzzle ---
+
+     Using the heuristic function h(s), h(s) = the number of tiles that 
+would have to be moved (i.e. tiles that	are out of place) for a state "s"
+to achieve a goal state. For example:
+   
+   h(BB_BWWW)=5, since 1 black could remain where it is in the goal state.
+   h(WW_BBWB)=1, since only 1 white tile needs to be moved.
+   h(WWWBBB_)=0, since this is one of the 7 goal states.
+
+This heuristic is admissible because it never exceeds the necessary cost.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+		  --- Vampires and Werewolves Puzzle ---
+
+     The heuristic function for this puzzle is very much the same as in
+the Black and White puzzle problem. h(s) = the number of vampires and
+werewolves that need to	   be on the West side of the Rio Grande for a state
+"s" to achieve a goal state. For example:
+
+    Let	       x be the boat's	 location.
+
+    h(3W,3V,x,0W,0V)=6, since all creatures need to go west.
+    h(1W,0V,x,2W,3V)=1, since only 1 Werewilf needs to cross to the west side.
+    h(0W,0V,x,3W,3V)=0, since this is the goal state.
+
+This heuristic is admissible because it never exceeds the necessary cost.
