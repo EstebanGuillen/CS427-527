@@ -1,0 +1,5 @@
+Esteban Guillen took the lead on the coding of the Black White Tile problems
+
+Arely Miramontes took the lead on the coding of the Vamp Wolf problems 
+
+Arely was the main contributor for the concept of the heuristic and Esteban implemented them in code.
