@@ -19,7 +19,7 @@
 %%% This code has been tested with SWI-Prolog (Multi-threaded, Version 5.2.13)
 %%% and appears to function as intended.
 
-- [adts]. /* consults (reconsults) file containing the various ADTs (Stack, Queue, etc.) */
+:- [adts]. /* consults (reconsults) file containing the various ADTs (Stack, Queue, etc.) */
 
 
 /*
