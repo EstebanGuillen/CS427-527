@@ -1,0 +1,616 @@
+?- ['black-white-hfs.pl'].
+true.
+
+?- go(state(b,b,b,e,w,w,w), state(w,w,w,b,b,b,e)).
+'Swap position 1 and 4' e b b b w w w 
+'Swap position 2 and 4' b e b b w w w 
+'Swap position 3 and 4' b b e b w w w 
+'Swap position 4 and 5' b b b w e w w 
+'Swap position 4 and 6' b b b w w e w 
+'Swap position 4 and 7' b b b w w w e 
+'      BACKTRACK from:' b b b e w w w 
+'Swap position 4 and 7' b b b e w w w 
+'Swap position 5 and 7' b b b w e w w 
+'Swap position 6 and 7' b b b w w e w 
+'      BACKTRACK from:' b b b w w w e 
+'Swap position 1 and 2' b e b b w w w 
+'Swap position 1 and 3' b b e b w w w 
+'Swap position 1 and 4' b b b e w w w 
+'      BACKTRACK from:' e b b b w w w 
+'Swap position 3 and 6' b b e w w b w 
+'Swap position 4 and 6' b b b e w w w 
+'Swap position 5 and 6' b b b w e w w 
+'Swap position 6 and 7' b b b w w w e 
+'      BACKTRACK from:' b b b w w e w 
+'Swap position 1 and 2' e b b b w w w 
+'Swap position 2 and 3' b b e b w w w 
+'Swap position 2 and 4' b b b e w w w 
+'Swap position 2 and 5' b w b b e w w 
+'      BACKTRACK from:' b e b b w w w 
+'Swap position 2 and 5' b e b w b w w 
+'Swap position 3 and 5' b b e w b w w 
+'Swap position 4 and 5' b b b e w w w 
+'Swap position 5 and 6' b b b w w e w 
+'Swap position 5 and 7' b b b w w w e 
+'      BACKTRACK from:' b b b w e w w 
+'Swap position 1 and 2' e b b w b w w 
+'Swap position 2 and 3' b b e w b w w 
+'Swap position 2 and 4' b w b e b w w 
+'Swap position 2 and 5' b b b w e w w 
+'      BACKTRACK from:' b e b w b w w 
+'Swap position 1 and 2' b e b w b w w 
+'Swap position 1 and 3' b b e w b w w 
+'Swap position 1 and 4' w b b e b w w 
+'      BACKTRACK from:' e b b w b w w 
+'Swap position 1 and 3' e b b b w w w 
+'Swap position 2 and 3' b e b b w w w 
+'Swap position 3 and 4' b b b e w w w 
+'Swap position 3 and 5' b b w b e w w 
+'Swap position 3 and 6' b b w b w e w 
+'      BACKTRACK from:' b b e b w w w 
+'Swap position 3 and 6' b b e b w w w 
+'Swap position 4 and 6' b b w e w b w 
+'Swap position 5 and 6' b b w b e w w 
+'Swap position 6 and 7' b b w b w w e 
+'      BACKTRACK from:' b b w b w e w 
+'Swap position 4 and 7' b b w e w w b 
+'Swap position 5 and 7' b b w b e w w 
+'Swap position 6 and 7' b b w b w e w 
+'      BACKTRACK from:' b b w b w w e 
+'Swap position 1 and 4' e b w b w b w 
+'Swap position 2 and 4' b e w b w b w 
+'Swap position 3 and 4' b b e w w b w 
+'Swap position 4 and 5' b b w w e b w 
+'Swap position 4 and 6' b b w b w e w 
+'Swap position 4 and 7' b b w w w b e 
+'      BACKTRACK from:' b b w e w b w 
+'Swap position 4 and 7' b b w e w b w 
+'Swap position 5 and 7' b b w w e b w 
+'Swap position 6 and 7' b b w w w e b 
+'      BACKTRACK from:' b b w w w b e 
+'Swap position 3 and 6' b b e w w w b 
+'Swap position 4 and 6' b b w e w w b 
+'Swap position 5 and 6' b b w w e w b 
+'Swap position 6 and 7' b b w w w b e 
+'      BACKTRACK from:' b b w w w e b 
+'Swap position 2 and 5' b e w w b b w 
+'Swap position 3 and 5' b b e w w b w 
+'Swap position 4 and 5' b b w e w b w 
+'Swap position 5 and 6' b b w w b e w 
+'Swap position 5 and 7' b b w w w b e 
+'      BACKTRACK from:' b b w w e b w 
+'Swap position 1 and 2' b e w b w b w 
+'Swap position 1 and 3' w b e b w b w 
+'Swap position 1 and 4' b b w e w b w 
+'      BACKTRACK from:' e b w b w b w 
+'Swap position 2 and 5' b e w b b w w 
+'Swap position 3 and 5' b b e b w w w 
+'Swap position 4 and 5' b b w e b w w 
+'Swap position 5 and 6' b b w b w e w 
+'Swap position 5 and 7' b b w b w w e 
+'      BACKTRACK from:' b b w b e w w 
+'Swap position 1 and 4' e b w b b w w 
+'Swap position 2 and 4' b e w b b w w 
+'Swap position 3 and 4' b b e w b w w 
+'Swap position 4 and 5' b b w b e w w 
+'Swap position 4 and 6' b b w w b e w 
+'Swap position 4 and 7' b b w w b w e 
+'      BACKTRACK from:' b b w e b w w 
+'Swap position 4 and 7' b b w e b w w 
+'Swap position 5 and 7' b b w w e w b 
+'Swap position 6 and 7' b b w w b e w 
+'      BACKTRACK from:' b b w w b w e 
+'Swap position 1 and 2' b e w b b w w 
+'Swap position 1 and 3' w b e b b w w 
+'Swap position 1 and 4' b b w e b w w 
+'      BACKTRACK from:' e b w b b w w 
+'Swap position 1 and 2' e b w b b w w 
+'Swap position 2 and 3' b w e b b w w 
+'Swap position 2 and 4' b b w e b w w 
+'Swap position 2 and 5' b b w b e w w 
+'      BACKTRACK from:' b e w b b w w 
+'Swap position 1 and 3' e w b b b w w 
+'Swap position 2 and 3' b e w b b w w 
+'Swap position 3 and 4' b w b e b w w 
+'Swap position 3 and 5' b w b b e w w 
+'Swap position 3 and 6' b w w b b e w 
+'      BACKTRACK from:' b w e b b w w 
+'Swap position 1 and 4' e w b b b w w 
+'Swap position 2 and 4' b e b w b w w 
+'Swap position 3 and 4' b w e b b w w 
+'Swap position 4 and 5' b w b b e w w 
+'Swap position 4 and 6' b w b w b e w 
+'Swap position 4 and 7' b w b w b w e 
+'      BACKTRACK from:' b w b e b w w 
+'Swap position 4 and 7' b w b e b w w 
+'Swap position 5 and 7' b w b w e w b 
+'Swap position 6 and 7' b w b w b e w 
+'      BACKTRACK from:' b w b w b w e 
+'Swap position 1 and 3' e b b w b w w 
+'Swap position 2 and 3' b e b w b w w 
+'Swap position 3 and 4' b b w e b w w 
+'Swap position 3 and 5' b b b w e w w 
+'Swap position 3 and 6' b b w w b e w 
+'      BACKTRACK from:' b b e w b w w 
+'Swap position 2 and 5' b e b b w w w 
+'Swap position 3 and 5' b w e b b w w 
+'Swap position 4 and 5' b w b e b w w 
+'Swap position 5 and 6' b w b b w e w 
+'Swap position 5 and 7' b w b b w w e 
+'      BACKTRACK from:' b w b b e w w 
+'Swap position 4 and 7' b w b e w w b 
+'Swap position 5 and 7' b w b b e w w 
+'Swap position 6 and 7' b w b b w e w 
+'      BACKTRACK from:' b w b b w w e 
+'Swap position 3 and 6' b w e b w b w 
+'Swap position 4 and 6' b w b e w b w 
+'Swap position 5 and 6' b w b b e w w 
+'Swap position 6 and 7' b w b b w w e 
+'      BACKTRACK from:' b w b b w e w 
+'Swap position 1 and 3' e w b b w b w 
+'Swap position 2 and 3' b e w b w b w 
+'Swap position 3 and 4' b w b e w b w 
+'Swap position 3 and 5' b w w b e b w 
+'Swap position 3 and 6' b w b b w e w 
+'      BACKTRACK from:' b w e b w b w 
+'Swap position 1 and 3' e b b w w b w 
+'Swap position 2 and 3' b e b w w b w 
+'Swap position 3 and 4' b b w e w b w 
+'Swap position 3 and 5' b b w w e b w 
+'Swap position 3 and 6' b b b w w e w 
+'      BACKTRACK from:' b b e w w b w 
+'Swap position 1 and 2' b e b w w b w 
+'Swap position 1 and 3' b b e w w b w 
+'Swap position 1 and 4' w b b e w b w 
+'      BACKTRACK from:' e b b w w b w 
+'Swap position 1 and 2' e b b w w b w 
+'Swap position 2 and 3' b b e w w b w 
+'Swap position 2 and 4' b w b e w b w 
+'Swap position 2 and 5' b w b w e b w 
+'      BACKTRACK from:' b e b w w b w 
+'Swap position 2 and 5' b e b w w b w 
+'Swap position 3 and 5' b w e w b b w 
+'Swap position 4 and 5' b w b e w b w 
+'Swap position 5 and 6' b w b w b e w 
+'Swap position 5 and 7' b w b w w b e 
+'      BACKTRACK from:' b w b w e b w 
+'Swap position 4 and 7' b w b e w b w 
+'Swap position 5 and 7' b w b w e b w 
+'Swap position 6 and 7' b w b w w e b 
+'      BACKTRACK from:' b w b w w b e 
+'Swap position 3 and 6' b w e w w b b 
+'Swap position 4 and 6' b w b e w w b 
+'Swap position 5 and 6' b w b w e w b 
+'Swap position 6 and 7' b w b w w b e 
+'      BACKTRACK from:' b w b w w e b 
+'Swap position 1 and 3' e w b w b b w 
+'Swap position 2 and 3' b e w w b b w 
+'Swap position 3 and 4' b w w e b b w 
+'Swap position 3 and 5' b w b w e b w 
+'Swap position 3 and 6' b w b w b e w 
+'      BACKTRACK from:' b w e w b b w 
+'Swap position 1 and 4' e w w b b b w 
+'Swap position 2 and 4' b e w w b b w 
+'Swap position 3 and 4' b w e w b b w 
+'Swap position 4 and 5' b w w b e b w 
+'Swap position 4 and 6' b w w b b e w 
+'Swap position 4 and 7' b w w w b b e 
+'      BACKTRACK from:' b w w e b b w 
+'Swap position 1 and 4' e b b w w b w 
+'Swap position 2 and 4' w e b b w b w 
+'Swap position 3 and 4' w b e b w b w 
+'Swap position 4 and 5' w b b w e b w 
+'Swap position 4 and 6' w b b b w e w 
+'Swap position 4 and 7' w b b w w b e 
+'      BACKTRACK from:' w b b e w b w 
+'Swap position 1 and 2' e w b b w b w 
+'Swap position 2 and 3' w b e b w b w 
+'Swap position 2 and 4' w b b e w b w 
+'Swap position 2 and 5' w w b b e b w 
+'      BACKTRACK from:' w e b b w b w 
+'Swap position 4 and 7' w b b e w b w 
+'Swap position 5 and 7' w b b w e b w 
+'Swap position 6 and 7' w b b w w e b 
+'      BACKTRACK from:' w b b w w b e 
+'Swap position 3 and 6' w b e w w b b 
+'Swap position 4 and 6' w b b e w w b 
+'Swap position 5 and 6' w b b w e w b 
+'Swap position 6 and 7' w b b w w b e 
+'      BACKTRACK from:' w b b w w e b 
+'Swap position 2 and 5' w e b w b b w 
+'Swap position 3 and 5' w b e w b b w 
+'Swap position 4 and 5' w b b e w b w 
+'Swap position 5 and 6' w b b w b e w 
+'Swap position 5 and 7' w b b w w b e 
+'      BACKTRACK from:' w b b w e b w 
+'Swap position 1 and 2' e w b w b b w 
+'Swap position 2 and 3' w b e w b b w 
+'Swap position 2 and 4' w w b e b b w 
+'Swap position 2 and 5' w b b w e b w 
+'      BACKTRACK from:' w e b w b b w 
+'Swap position 1 and 4' e w b w b b w 
+'Swap position 2 and 4' w e b w b b w 
+'Swap position 3 and 4' w w e b b b w 
+'Swap position 4 and 5' w w b b e b w 
+'Swap position 4 and 6' w w b b b e w 
+'Swap position 4 and 7' w w b w b b e 
+'      BACKTRACK from:' w w b e b b w 
+'Swap position 2 and 5' b e w b w b w 
+'Swap position 3 and 5' b w e b w b w 
+'Swap position 4 and 5' b w w e b b w 
+'Swap position 5 and 6' b w w b b e w 
+'Swap position 5 and 7' b w w b w b e 
+'      BACKTRACK from:' b w w b e b w 
+'Swap position 1 and 2' w e b b w b w 
+'Swap position 1 and 3' b w e b w b w 
+'Swap position 1 and 4' b w b e w b w 
+'      BACKTRACK from:' e w b b w b w 
+'Swap position 1 and 4' e w b b w b w 
+'Swap position 2 and 4' b e b w w b w 
+'Swap position 3 and 4' b w e b w b w 
+'Swap position 4 and 5' b w b w e b w 
+'Swap position 4 and 6' b w b b w e w 
+'Swap position 4 and 7' b w b w w b e 
+'      BACKTRACK from:' b w b e w b w 
+'Swap position 1 and 4' e w b b w w b 
+'Swap position 2 and 4' b e b w w w b 
+'Swap position 3 and 4' b w e b w w b 
+'Swap position 4 and 5' b w b w e w b 
+'Swap position 4 and 6' b w b w w e b 
+'Swap position 4 and 7' b w b b w w e 
+'      BACKTRACK from:' b w b e w w b 
+'Swap position 1 and 3' e w b b w w b 
+'Swap position 2 and 3' b e w b w w b 
+'Swap position 3 and 4' b w b e w w b 
+'Swap position 3 and 5' b w w b e w b 
+'Swap position 3 and 6' b w w b w e b 
+'      BACKTRACK from:' b w e b w w b 
+'Swap position 3 and 6' b w e b w w b 
+'Swap position 4 and 6' b w w e w b b 
+'Swap position 5 and 6' b w w b e w b 
+'Swap position 6 and 7' b w w b w b e 
+'      BACKTRACK from:' b w w b w e b 
+'Swap position 1 and 4' e w w b w b b 
+'Swap position 2 and 4' b e w w w b b 
+'Swap position 3 and 4' b w e w w b b 
+'Swap position 4 and 5' b w w w e b b 
+'Swap position 4 and 6' b w w b w e b 
+'Swap position 4 and 7' b w w b w b e 
+'      BACKTRACK from:' b w w e w b b 
+'Swap position 1 and 2' w e b b w w b 
+'Swap position 1 and 3' b w e b w w b 
+'Swap position 1 and 4' b w b e w w b 
+'      BACKTRACK from:' e w b b w w b 
+'Swap position 1 and 2' e w b b w w b 
+'Swap position 2 and 3' w b e b w w b 
+'Swap position 2 and 4' w b b e w w b 
+'Swap position 2 and 5' w w b b e w b 
+'      BACKTRACK from:' w e b b w w b 
+'Swap position 2 and 5' b e b w w w b 
+'Swap position 3 and 5' b w e w b w b 
+'Swap position 4 and 5' b w b e w w b 
+'Swap position 5 and 6' b w b w w e b 
+'Swap position 5 and 7' b w b w b w e 
+'      BACKTRACK from:' b w b w e w b 
+'Swap position 3 and 6' b w e w b b w 
+'Swap position 4 and 6' b w b e b w w 
+'Swap position 5 and 6' b w b w e b w 
+'Swap position 6 and 7' b w b w b w e 
+'      BACKTRACK from:' b w b w b e w 
+'Swap position 1 and 2' w e b b b w w 
+'Swap position 1 and 3' b w e b b w w 
+'Swap position 1 and 4' b w b e b w w 
+'      BACKTRACK from:' e w b b b w w 
+'Swap position 1 and 2' e w b b b w w 
+'Swap position 2 and 3' w b e b b w w 
+'Swap position 2 and 4' w b b e b w w 
+'Swap position 2 and 5' w b b b e w w 
+'      BACKTRACK from:' w e b b b w w 
+'Swap position 1 and 3' e b w b b w w 
+'Swap position 2 and 3' w e b b b w w 
+'Swap position 3 and 4' w b b e b w w 
+'Swap position 3 and 5' w b b b e w w 
+'Swap position 3 and 6' w b w b b e w 
+'      BACKTRACK from:' w b e b b w w 
+'Swap position 1 and 3' e b w b w b w 
+'Swap position 2 and 3' w e b b w b w 
+'Swap position 3 and 4' w b b e w b w 
+'Swap position 3 and 5' w b w b e b w 
+'Swap position 3 and 6' w b b b w e w 
+'      BACKTRACK from:' w b e b w b w 
+'Swap position 1 and 2' e b w b w b w 
+'Swap position 2 and 3' b w e b w b w 
+'Swap position 2 and 4' b b w e w b w 
+'Swap position 2 and 5' b w w b e b w 
+'      BACKTRACK from:' b e w b w b w 
+'Swap position 1 and 4' e b w b w w b 
+'Swap position 2 and 4' b e w b w w b 
+'Swap position 3 and 4' b b e w w w b 
+'Swap position 4 and 5' b b w w e w b 
+'Swap position 4 and 6' b b w w w e b 
+'Swap position 4 and 7' b b w b w w e 
+'      BACKTRACK from:' b b w e w w b 
+'Swap position 1 and 2' b e w b w w b 
+'Swap position 1 and 3' w b e b w w b 
+'Swap position 1 and 4' b b w e w w b 
+'      BACKTRACK from:' e b w b w w b 
+'Swap position 1 and 4' e b b w b w w 
+'Swap position 2 and 4' w e b b b w w 
+'Swap position 3 and 4' w b e b b w w 
+'Swap position 4 and 5' w b b b e w w 
+'Swap position 4 and 6' w b b w b e w 
+'Swap position 4 and 7' w b b w b w e 
+'      BACKTRACK from:' w b b e b w w 
+'Swap position 4 and 7' w b b e b w w 
+'Swap position 5 and 7' w b b w e w b 
+'Swap position 6 and 7' w b b w b e w 
+'      BACKTRACK from:' w b b w b w e 
+'Swap position 2 and 5' w e w b b b w 
+'Swap position 3 and 5' w b e b w b w 
+'Swap position 4 and 5' w b w e b b w 
+'Swap position 5 and 6' w b w b b e w 
+'Swap position 5 and 7' w b w b w b e 
+'      BACKTRACK from:' w b w b e b w 
+'Swap position 1 and 4' e b w w b b w 
+'Swap position 2 and 4' w e w b b b w 
+'Swap position 3 and 4' w b e w b b w 
+'Swap position 4 and 5' w b w b e b w 
+'Swap position 4 and 6' w b w b b e w 
+'Swap position 4 and 7' w b w w b b e 
+'      BACKTRACK from:' w b w e b b w 
+'Swap position 1 and 2' e w w b b b w 
+'Swap position 2 and 3' w w e b b b w 
+'Swap position 2 and 4' w b w e b b w 
+'Swap position 2 and 5' w b w b e b w 
+'      BACKTRACK from:' w e w b b b w 
+'Swap position 1 and 3' e w b w b w b 
+'Swap position 2 and 3' b e w w b w b 
+'Swap position 3 and 4' b w w e b w b 
+'Swap position 3 and 5' b w b w e w b 
+'Swap position 3 and 6' b w w w b e b 
+'      BACKTRACK from:' b w e w b w b 
+'Swap position 1 and 4' e w w b b w b 
+'Swap position 2 and 4' b e w w b w b 
+'Swap position 3 and 4' b w e w b w b 
+'Swap position 4 and 5' b w w b e w b 
+'Swap position 4 and 6' b w w w b e b 
+'Swap position 4 and 7' b w w b b w e 
+'      BACKTRACK from:' b w w e b w b 
+'Swap position 3 and 6' b w e w b w b 
+'Swap position 4 and 6' b w w e b w b 
+'Swap position 5 and 6' b w w w e b b 
+'Swap position 6 and 7' b w w w b b e 
+'      BACKTRACK from:' b w w w b e b 
+'Swap position 2 and 5' b e w w w b b 
+'Swap position 3 and 5' b w e w w b b 
+'Swap position 4 and 5' b w w e w b b 
+'Swap position 5 and 6' b w w w b e b 
+'Swap position 5 and 7' b w w w b b e 
+'      BACKTRACK from:' b w w w e b b 
+'Swap position 2 and 5' b e w b w w b 
+'Swap position 3 and 5' b w e b w w b 
+'Swap position 4 and 5' b w w e b w b 
+'Swap position 5 and 6' b w w b w e b 
+'Swap position 5 and 7' b w w b b w e 
+'      BACKTRACK from:' b w w b e w b 
+'Swap position 1 and 2' e b b w w w b 
+'Swap position 2 and 3' b b e w w w b 
+'Swap position 2 and 4' b w b e w w b 
+'Swap position 2 and 5' b w b w e w b 
+'      BACKTRACK from:' b e b w w w b 
+'Swap position 1 and 2' b e b w w w b 
+'Swap position 1 and 3' b b e w w w b 
+'Swap position 1 and 4' w b b e w w b 
+'      BACKTRACK from:' e b b w w w b 
+'Swap position 4 and 7' b w w e w b b 
+'Swap position 5 and 7' b w w b e b w 
+'Swap position 6 and 7' b w w b w e b 
+'      BACKTRACK from:' b w w b w b e 
+'Swap position 1 and 3' e w w b b b w 
+'Swap position 2 and 3' w e w b b b w 
+'Swap position 3 and 4' w w b e b b w 
+'Swap position 3 and 5' w w b b e b w 
+'Swap position 3 and 6' w w b b b e w 
+'      BACKTRACK from:' w w e b b b w 
+'Swap position 1 and 3' e b w w b b w 
+'Swap position 2 and 3' w e b w b b w 
+'Swap position 3 and 4' w b w e b b w 
+'Swap position 3 and 5' w b b w e b w 
+'Swap position 3 and 6' w b b w b e w 
+'      BACKTRACK from:' w b e w b b w 
+'Swap position 2 and 5' w e b b w b w 
+'Swap position 3 and 5' w w e b b b w 
+'Swap position 4 and 5' w w b e b b w 
+'Swap position 5 and 6' w w b b b e w 
+'Swap position 5 and 7' w w b b w b e 
+'      BACKTRACK from:' w w b b e b w 
+'Swap position 3 and 6' w b e b w b w 
+'Swap position 4 and 6' w b b e w b w 
+'Swap position 5 and 6' w b b b e w w 
+'Swap position 6 and 7' w b b b w w e 
+'      BACKTRACK from:' w b b b w e w 
+'Swap position 4 and 7' w b b e w w b 
+'Swap position 5 and 7' w b b b e w w 
+'Swap position 6 and 7' w b b b w e w 
+'      BACKTRACK from:' w b b b w w e 
+'Swap position 1 and 2' w e b w b b w 
+'Swap position 1 and 3' b w e w b b w 
+'Swap position 1 and 4' w w b e b b w 
+'      BACKTRACK from:' e w b w b b w 
+'Swap position 3 and 6' b w e b b w w 
+'Swap position 4 and 6' b w w e b b w 
+'Swap position 5 and 6' b w w b e b w 
+'Swap position 6 and 7' b w w b b w e 
+'      BACKTRACK from:' b w w b b e w 
+'Swap position 3 and 6' b b e w b w w 
+'Swap position 4 and 6' b b w e b w w 
+'Swap position 5 and 6' b b w w e b w 
+'Swap position 6 and 7' b b w w b w e 
+'      BACKTRACK from:' b b w w b e w 
+'Swap position 1 and 2' e b w w b b w 
+'Swap position 2 and 3' b w e w b b w 
+'Swap position 2 and 4' b w w e b b w 
+'Swap position 2 and 5' b b w w e b w 
+'      BACKTRACK from:' b e w w b b w 
+'Swap position 2 and 5' b e w w b w b 
+'Swap position 3 and 5' b b e w w w b 
+'Swap position 4 and 5' b b w e w w b 
+'Swap position 5 and 6' b b w w w e b 
+'Swap position 5 and 7' b b w w b w e 
+'      BACKTRACK from:' b b w w e w b 
+'Swap position 4 and 7' w w b e w b b 
+'Swap position 5 and 7' w w b b e b w 
+'Swap position 6 and 7' w w b b w e b 
+'      BACKTRACK from:' w w b b w b e 
+'Swap position 1 and 4' e w b w w b b 
+'Swap position 2 and 4' w e b w w b b 
+'Swap position 3 and 4' w w e b w b b 
+'Swap position 4 and 5' w w b w e b b 
+'Swap position 4 and 6' w w b b w e b 
+'Swap position 4 and 7' w w b b w b e 
+'      BACKTRACK from:' w w b e w b b 
+'Swap position 2 and 5' w e b w w b b 
+'Swap position 3 and 5' w w e w b b b 
+'Swap position 4 and 5' w w b e w b b 
+'Swap position 5 and 6' w w b w b e b 
+'Swap position 5 and 7' w w b w b b e 
+'      BACKTRACK from:' w w b w e b b 
+'Swap position 1 and 3' e w w b w b b 
+'Swap position 2 and 3' w e w b w b b 
+'Swap position 3 and 4' w w b e w b b 
+'Swap position 3 and 5' w w w b e b b 
+'Swap position 3 and 6' w w b b w e b 
+'      BACKTRACK from:' w w e b w b b 
+'Swap position 3 and 6' w w e b w b b 
+'Swap position 4 and 6' w w b e w b b 
+'Swap position 5 and 6' w w b b e w b 
+'Swap position 6 and 7' w w b b w b e 
+'      BACKTRACK from:' w w b b w e b 
+'Swap position 1 and 2' w e b w b w b 
+'Swap position 1 and 3' b w e w b w b 
+'Swap position 1 and 4' w w b e b w b 
+'      BACKTRACK from:' e w b w b w b 
+'Swap position 1 and 4' e w b w b w b 
+'Swap position 2 and 4' w e b w b w b 
+'Swap position 3 and 4' w w e b b w b 
+'Swap position 4 and 5' w w b b e w b 
+'Swap position 4 and 6' w w b w b e b 
+'Swap position 4 and 7' w w b b b w e 
+'      BACKTRACK from:' w w b e b w b 
+'Swap position 1 and 3' e w w b b w b 
+'Swap position 2 and 3' w e w b b w b 
+'Swap position 3 and 4' w w b e b w b 
+'Swap position 3 and 5' w w b b e w b 
+'Swap position 3 and 6' w w w b b e b 
+'      BACKTRACK from:' w w e b b w b 
+'Swap position 1 and 2' e w b w b w b 
+'Swap position 2 and 3' w b e w b w b 
+'Swap position 2 and 4' w w b e b w b 
+'Swap position 2 and 5' w b b w e w b 
+'      BACKTRACK from:' w e b w b w b 
+'Swap position 4 and 7' w b w e w b b 
+'Swap position 5 and 7' w b w b e b w 
+'Swap position 6 and 7' w b w b w e b 
+'      BACKTRACK from:' w b w b w b e 
+'Swap position 1 and 4' e b w w w b b 
+'Swap position 2 and 4' w e w b w b b 
+'Swap position 3 and 4' w b e w w b b 
+'Swap position 4 and 5' w b w w e b b 
+'Swap position 4 and 6' w b w b w e b 
+'Swap position 4 and 7' w b w b w b e 
+'      BACKTRACK from:' w b w e w b b 
+'Swap position 2 and 5' w e w w b b b 
+'Swap position 3 and 5' w b e w w b b 
+'Swap position 4 and 5' w b w e w b b 
+'Swap position 5 and 6' w b w w b e b 
+'Swap position 5 and 7' w b w w b b e 
+'      BACKTRACK from:' w b w w e b b 
+'Swap position 3 and 6' w b e b w w b 
+'Swap position 4 and 6' w b w e w b b 
+'Swap position 5 and 6' w b w b e w b 
+'Swap position 6 and 7' w b w b w b e 
+'      BACKTRACK from:' w b w b w e b 
+'Swap position 3 and 6' w b e b b w w 
+'Swap position 4 and 6' w b w e b b w 
+'Swap position 5 and 6' w b w b e b w 
+'Swap position 6 and 7' w b w b b w e 
+'      BACKTRACK from:' w b w b b e w 
+'Swap position 4 and 7' w b w e b w b 
+'Swap position 5 and 7' w b w b e w b 
+'Swap position 6 and 7' w b w b b e w 
+'      BACKTRACK from:' w b w b b w e 
+'Swap position 1 and 4' e b w w b w b 
+'Swap position 2 and 4' w e w b b w b 
+'Swap position 3 and 4' w b e w b w b 
+'Swap position 4 and 5' w b w b e w b 
+'Swap position 4 and 6' w b w w b e b 
+'Swap position 4 and 7' w b w b b w e 
+'      BACKTRACK from:' w b w e b w b 
+'Swap position 2 and 5' w e b b w w b 
+'Swap position 3 and 5' w w e b b w b 
+'Swap position 4 and 5' w w b e b w b 
+'Swap position 5 and 6' w w b b w e b 
+'Swap position 5 and 7' w w b b b w e 
+'      BACKTRACK from:' w w b b e w b 
+'Swap position 1 and 3' e b w b w w b 
+'Swap position 2 and 3' w e b b w w b 
+'Swap position 3 and 4' w b b e w w b 
+'Swap position 3 and 5' w b w b e w b 
+'Swap position 3 and 6' w b w b w e b 
+'      BACKTRACK from:' w b e b w w b 
+'Swap position 1 and 2' e b w b w w b 
+'Swap position 2 and 3' b w e b w w b 
+'Swap position 2 and 4' b b w e w w b 
+'Swap position 2 and 5' b w w b e w b 
+'      BACKTRACK from:' b e w b w w b 
+'Swap position 3 and 6' w b e w b b w 
+'Swap position 4 and 6' w b b e b w w 
+'Swap position 5 and 6' w b b w e b w 
+'Swap position 6 and 7' w b b w b w e 
+'      BACKTRACK from:' w b b w b e w 
+'Swap position 2 and 5' w e b w b w b 
+'Swap position 3 and 5' w b e w b w b 
+'Swap position 4 and 5' w b b e w w b 
+'Swap position 5 and 6' w b b w w e b 
+'Swap position 5 and 7' w b b w b w e 
+'      BACKTRACK from:' w b b w e w b 
+'Swap position 1 and 3' e b w w w b b 
+'Swap position 2 and 3' w e b w w b b 
+'Swap position 3 and 4' w b w e w b b 
+'Swap position 3 and 5' w b w w e b b 
+'Swap position 3 and 6' w b b w w e b 
+'      BACKTRACK from:' w b e w w b b 
+'Swap position 4 and 7' b w w e b b w 
+'Swap position 5 and 7' b w w w e b b 
+'Swap position 6 and 7' b w w w b e b 
+'      BACKTRACK from:' b w w w b b e 
+'Swap position 1 and 2' w e w b b b w 
+'Swap position 1 and 3' w w e b b b w 
+'Swap position 1 and 4' b w w e b b w 
+'      BACKTRACK from:' e w w b b b w 
+'Swap position 1 and 3' e w b w w b b 
+'Swap position 2 and 3' b e w w w b b 
+'Swap position 3 and 4' b w w e w b b 
+'Swap position 3 and 5' b w w w e b b 
+'Swap position 3 and 6' b w b w w e b 
+'      BACKTRACK from:' b w e w w b b 
+'Swap position 2 and 5' w e w b w b b 
+'Swap position 3 and 5' w w e b w b b 
+'Swap position 4 and 5' w w w e b b b 
+'Swap position 5 and 6' w w w b b e b 
+'Swap position 5 and 7' w w w b b b e 
+'      BACKTRACK from:' w w w b e b b 
+Solution path is: 
+state(b,b,b,e,w,w,w)
+state(b,b,b,w,w,e,w)
+state(b,b,e,w,w,b,w)
+state(e,b,b,w,w,b,w)
+state(w,b,b,e,w,b,w)
+state(w,e,b,b,w,b,w)
+state(w,w,b,b,e,b,w)
+state(w,w,b,b,w,b,e)
+state(w,w,b,e,w,b,b)
+state(w,w,e,b,w,b,b)
+state(w,w,w,b,e,b,b)
+state(w,w,w,b,b,b,e)
+true 
